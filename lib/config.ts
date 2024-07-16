@@ -1,4 +1,4 @@
-import type { BuildConfig } from "bun";
+import type { BuildConfig, Env } from "bun";
 
 export type BuildType<T extends ConfigType> = {
 	type: T;
@@ -11,7 +11,8 @@ export type ConfigType = "http" | "static" | "assets";
 export type UserConfig = {
 	configs: ({
 		name: string,
-	} & BuildType<ConfigType>)[]
+	} & BuildType<ConfigType>)[],
+	env: Env
 }
 
 export function defineConfig(config: UserConfig) {

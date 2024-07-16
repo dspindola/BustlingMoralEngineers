@@ -14,5 +14,6 @@ export default defineConfig({
 			},
 			handler: "src/server.tsx"
 		}
-	]
+	],
+	env: import.meta.env
 })

@@ -4,6 +4,9 @@ smol = true
 logLevel = "info"
 preload = ["./preload.ts"]
 
+[loader]
+".replit" = "toml"
+
 [define]
 "import.meta.env.DEV" = "true"
 "import.meta.env.PROD" = "false"
@@ -12,5 +15,3 @@ preload = ["./preload.ts"]
 "import.meta.env.ASSETS_PREFIX" = "'/_static'"
 "import.meta.env.DIST_OUTDIR" = "'.out'"
 "import.meta.env.CONFIG_PATH" = "'app.config.ts'"
-
-
