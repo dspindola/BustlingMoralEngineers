@@ -1,0 +1,16 @@
+jsx = "react-jsx"
+jsxImportSource = "react"
+smol = true
+logLevel = "info"
+preload = ["./preload.ts"]
+
+[define]
+"import.meta.env.DEV" = "true"
+"import.meta.env.PROD" = "false"
+"import.meta.env.MODE" = "'development'"
+"import.meta.env.DIST_PREFIX" = "'/_dist'"
+"import.meta.env.ASSETS_PREFIX" = "'/_static'"
+"import.meta.env.DIST_OUTDIR" = "'.out'"
+"import.meta.env.CONFIG_PATH" = "'app.config.ts'"
+
+

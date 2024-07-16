@@ -1,0 +1,19 @@
+run = "bun run dev"
+entrypoint = "./src/server.tsx"
+modules = ["nix", "web", "typescript-language-server"]
+
+[nix]
+channel = "stable-24_05"
+
+[env]
+PATH = "/home/runner/$REPL_SLUG/.config/npm/node_global/bin:/home/runner/$REPL_SLUG/node_modules/.bin:/home/runner/$REPL_SLUG/.config/.bun/bin"
+XDG_CONFIG_HOME = "/home/runner/$REPL_SLUG/.config"
+npm_config_prefix = "/home/runner/$REPL_SLUG/.config/npm/node_global"
+BUN_INSTALL = "/home/runner/$REPL_SLUG/.config/.bun"
+BUN_CONFIG_NO_CLEAR_TERMINAL_ON_RELOAD = "true"
+DO_NOT_TRACK = "1"
+BUN_CONFIG_MAX_HTTP_REQUESTS = "64"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
